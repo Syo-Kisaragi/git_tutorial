@@ -10,3 +10,16 @@ git log -p <file-name>: <file-name>の詳しい変更情報を表示。<file-nam
 ローカルファイルとステージング領域のファイルとの差分を表示
 
 git diff HEAD: ステージング領域と最新コミットファイルとの差分を表示
+
+
+[git remote add origin <URL>]
+remote add: リモートリポジトリを追加
+origin: リモートリポジトリURLのエイリアス
+<URL>: https://github.com/ユーザ名/リポジトリ名
+
+
+[git push]
+ローカルリポジトリの内容をリモートリポジトリへ送信
+
+git push origin master: masterブランチへ送る
+git push origin feature: featureブランチへ送る
