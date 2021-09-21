@@ -23,3 +23,10 @@ origin: リモートリポジトリURLのエイリアス
 
 git push origin master: masterブランチへ送る
 git push origin feature: featureブランチへ送る
+
+
+
+[git rm]
+コミットしたファイルをGitの管理から削除する
+
+git rm --cached [file-name]: Gitの管理から外したいけど、ファイルは削除したくない（後にファイルは.gitignoreに追記しておく）
