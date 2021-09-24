@@ -45,7 +45,7 @@ origin: リモートリポジトリURLのエイリアス
 
 git push origin master: masterブランチへ送る
 git push origin feature: featureブランチへ送る
-
+git push -u origin master: originのmasuterブランチへ送る際は、次回以降git pushでOK
 
 
 [git rm]
