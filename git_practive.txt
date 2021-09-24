@@ -1,7 +1,43 @@
+<<<<<<< HEAD
+[git config --global]
+使用中のPCにある全てのGitプロジェクトに設定を適用
+
+◆エイリアス
+ex) git config --global alias.ct commit
+
+
+
+
 [git log] 
 コミットされたファイルの状態を確認
 
 git log -oneline: 変更情報を一行ずつで表示
+=======
+[git add]
+変更をステージに追加する
+ステージ：任意のファイルをステージに追加するための機能
+
+git add <ファイル名>
+git add <ディレクトリ名>
+git add . // 全てステージに追加
+
+
+
+[git commit]
+コミット：変更を記録する
+記録内容：変更、新規作成、削除、複数ファイルの変更、作成、削除
+
+git commit
+git commit -m "<メッセージ>"
+git commit -v
+
+
+
+[git log] 
+コミットされたファイルの状態を確認
+
+git log --oneline: 変更情報を一行ずつで表示
+>>>>>>> e2ef2cc (メモの追記)
 git log -n <num>: 新しくコミットしたファイルから<num>番目までのファイルを表示
 git log -p <file-name>: <file-name>の詳しい変更情報を表示。<file-name>の指定がなければ、全ファイルの情報を表示。 
 
@@ -10,6 +46,11 @@ git log -p <file-name>: <file-name>の詳しい変更情報を表示。<file-nam
 ローカルファイルとステージング領域のファイルとの差分を表示
 
 git diff HEAD: ステージング領域と最新コミットファイルとの差分を表示
+<<<<<<< HEAD
+=======
+git diff --staged // ステージング領域とリポジトリとの差分を表示
+
+>>>>>>> e2ef2cc (メモの追記)
 
 
 [git remote add origin <URL>]
@@ -30,3 +71,11 @@ git push origin feature: featureブランチへ送る
 コミットしたファイルをGitの管理から削除する
 
 git rm --cached [file-name]: Gitの管理から外したいけど、ファイルは削除したくない（後にファイルは.gitignoreに追記しておく）
+<<<<<<< HEAD
+=======
+
+
+
+[git clone <リポジトリ名>]
+Gitリポジトリのコピーを作成する
+>>>>>>> e2ef2cc (メモの追記)
