@@ -102,6 +102,11 @@ git reset HEAD <ディレクトリ名>
 git reset HEAD .
 
 
+[git commit --amend]
+直前のコミットをやり直す
+※リモートリポジトリにPushしたコミットはやり直したらダメ
+
+
 [管理しないファイルをGitの管理から外す]
 .gitignoreファイルに指定する
 ・パスワードなどの機密情報
