@@ -107,6 +107,12 @@ git reset HEAD .
 ※リモートリポジトリにPushしたコミットはやり直したらダメ
 
 
+
+[git remote]
+リモートを表示する
+
+git remote -v # 対応するURLを表示
+
 [管理しないファイルをGitの管理から外す]
 .gitignoreファイルに指定する
 ・パスワードなどの機密情報
