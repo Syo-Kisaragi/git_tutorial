@@ -115,6 +115,8 @@ git remote -v # 対応するURLを表示
 git remote show <リモート名>
 ex) git remote show origin => リモートの詳細表示
 
+git remote rename <旧リモート名> <新リモート名> => リモート名を変更
+git remote rm <リモート名> => リモートを削除
 
 [git fetch]
 リモートから情報を取得する
