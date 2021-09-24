@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 [git config --global]
 使用中のPCにある全てのGitプロジェクトに設定を適用
 
@@ -8,13 +7,6 @@ ex) git config --global alias.ct commit
 
 
 
-[git log] 
-コミットされたファイルの状態を確認
-
-git log -oneline: 変更情報を一行ずつで表示
-=======
-=======
->>>>>>> aaac272556295ff9c45cb4a9a55fc27eac13cbee
 [git add]
 変更をステージに追加する
 ステージ：任意のファイルをステージに追加するための機能
@@ -39,10 +31,6 @@ git commit -v
 コミットされたファイルの状態を確認
 
 git log --oneline: 変更情報を一行ずつで表示
-<<<<<<< HEAD
->>>>>>> e2ef2cc (メモの追記)
-=======
->>>>>>> aaac272556295ff9c45cb4a9a55fc27eac13cbee
 git log -n <num>: 新しくコミットしたファイルから<num>番目までのファイルを表示
 git log -p <file-name>: <file-name>の詳しい変更情報を表示。<file-name>の指定がなければ、全ファイルの情報を表示。 
 
@@ -51,16 +39,9 @@ git log -p <file-name>: <file-name>の詳しい変更情報を表示。<file-nam
 ローカルファイルとステージング領域のファイルとの差分を表示
 
 git diff HEAD: ステージング領域と最新コミットファイルとの差分を表示
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
+git diff --staged // ステージング領域とリポジトリとの差分を表示
 git diff --staged // ステージング領域とリポジトリとの差分を表示
 
->>>>>>> e2ef2cc (メモの追記)
-=======
-git diff --staged // ステージング領域とリポジトリとの差分を表示
-
->>>>>>> aaac272556295ff9c45cb4a9a55fc27eac13cbee
 
 
 [git remote add origin <URL>]
@@ -83,24 +64,11 @@ git push -u origin master: originのmasuterブランチへ送る際は、次回�
 git rm <ファイル名>
 git rm -r <ディレクトリ名>
 git rm --cached [file-name]: Gitの管理から外したいけど、ファイルは削除したくない（後にファイルは.gitignoreに追記しておく）
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> aaac272556295ff9c45cb4a9a55fc27eac13cbee
 
 
 
 [git clone <リポジトリ名>]
 Gitリポジトリのコピーを作成する
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> e2ef2cc (メモの追記)
-=======
-=======
->>>>>>> aaac272556295ff9c45cb4a9a55fc27eac13cbee
-
-
 
 
 [git mv <旧ファイル> <新ファイル>]
