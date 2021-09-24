@@ -112,7 +112,8 @@ git reset HEAD .
 リモートを表示する
 
 git remote -v # 対応するURLを表示
-
+git remote show <リモート名>
+ex) git remote show origin => リモートの詳細表示
 
 
 [git fetch]
@@ -133,6 +134,11 @@ git merge # fetchで取り込んだ情報をワークツリーに反映する
 
 git pull <リモート名> <ブランチ名>
 git pull origin master
+
+※プルの注意点
+git pull origin hoge → masterブランチにhogeブランチがマージされる
+
+
 
 # 上記コマンドは省略可能
 git pull
