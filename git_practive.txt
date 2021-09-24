@@ -113,6 +113,35 @@ git reset HEAD .
 
 git remote -v # 対応するURLを表示
 
+
+
+[git fetch]
+リモートから情報を取得する
+
+git fetch <リモート名>
+git fetch origin
+
+
+[git merge]
+
+git merge # fetchで取り込んだ情報をワークツリーに反映する
+
+
+
+[git pull]
+リモートから情報を取得してマージする
+
+git pull <リモート名> <ブランチ名>
+git pull origin master
+
+# 上記コマンドは省略可能
+git pull
+
+# これは下記コマンドと同じこと
+git fetch origin master
+git merge origin/master
+
+
 [管理しないファイルをGitの管理から外す]
 .gitignoreファイルに指定する
 ・パスワードなどの機密情報
