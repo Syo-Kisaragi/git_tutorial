@@ -320,7 +320,7 @@ HEAD^ => マージした場合の2番目の親を指定する
 
 
 -コミットを並び替える、削除する
-git rebame -i HEAD~n を実行して、希望の操作をする
+git rebase -i HEAD~n を実行して、希望の操作をする
 
 -コミットをまとめる
 git rebase -i HEAD~n を実行して、pickからsquashにする ※squash : そのコミットを直前のコミットと一つにまとめる
