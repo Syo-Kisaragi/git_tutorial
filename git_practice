@@ -305,3 +305,15 @@ GitHubにプッシュしたコミットをリベースしない
 プッシュしていないローカルの変更にはリベース
 プッシュした後はマージ
 コンフリクトしそうならマージ
+
+
+-複数のコミットをやり直す
+1) git rebase -i <コミットID>
+ex) git rebase -i HEAD~3 => 直前コミット３つ分
+
+2) やり直したいcommitをpickからeditにする
+3) git commit --amend
+4) git rebase --continue
+
+HEAD~ => 1番目の親コミット。HEADを基点にして数値分の親コミットまで指定する。
+HEAD^ => マージした場合の2番目の親を指定する
