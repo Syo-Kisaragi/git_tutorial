@@ -334,3 +334,11 @@ git commit -m "README修正"
 git add index.html
 git commit -m "index.html修正"
 git rebase --continue
+
+
+[タグ]
+コミットを参照しやすくするためにわかりやすい名前を付ける
+よくリリースポイントに使われる
+
+git tag  => タグの一覧を表示する
+git tag -l "201705" => パターンを指定してタグを表示
