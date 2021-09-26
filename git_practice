@@ -324,3 +324,13 @@ git rebase -i HEAD~n を実行して、希望の操作をする
 
 -コミットをまとめる
 git rebase -i HEAD~n を実行して、pickからsquashにする ※squash : そのコミットを直前のコミットと一つにまとめる
+
+-コミットを分割する
+git rebase -i HEAD-n を実行して、pickからeditにする
+
+git reset HEAD^
+git add README
+git commit -m "README修正"
+git add index.html
+git commit -m "index.html修正"
+git rebase --continue
